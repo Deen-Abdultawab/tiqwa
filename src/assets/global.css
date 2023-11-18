@@ -19,9 +19,16 @@
     --gray-3: #8492A6;
 }
 
+button {
+    border: none;
+}
+
 body {
     background: var(--background);
-    font-size: 16px;
+}
+
+html {
+    font-size: 16px; /**12.32px or a scale factor of 0.77**/
 }
 
 img {
@@ -35,4 +42,20 @@ img {
 
 ul {
     list-style-type: none;
+}
+
+@media only screen and (min-width: 1500px){
+    html {
+        font-size: 18.78px;
+    }
+}
+@media only screen and (min-width: 1700px){
+    html {
+        font-size: 20.78px;
+    }
+}
+@media only screen and (min-width: 2000px){
+    html {
+        font-size: 22.78px;
+    }
 }

@@ -48,6 +48,7 @@ ul {
 nav {
     padding: 1.16rem 0;
     width: 100%;
+    border: 1px solid red;
   }
 
   .nav-center {
@@ -60,7 +61,8 @@ nav {
   }
 
   .logo, li {
-    color: white;
+    color: var(--white);
+    cursor: pointer;
   }
 
   .logo {

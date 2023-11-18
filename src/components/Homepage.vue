@@ -100,19 +100,53 @@
         </section>
         <section class="distribution">
             <div class="top-row">
-                <h3>Multiple Global Distribution System</h3>
+                <h3 class="hero">Multiple Global Distribution System</h3>
                 <p>Get flight inventories from different GDS using our combined seamless API</p>
                 <div class="dist-system">
-                
+                    <img src="../assets/images/Sabre.png"  alt="">
+                    <img src="../assets/images/amadeus.png"  alt="">
+                    <img src="../assets/images/galileo.png"  alt="">
+                </div>
+                <button class="btn2">
+                    View our Documentation
+                    <img src="../assets/images/arrow.png" alt="">
+                </button>
+            </div>
+            <div class="btm-row">
+                <img src="../assets/images/card.png" alt="" class="card">
+                <img src="../assets/images/api-demo.png" alt="" class="api-demo">
+                <img src="../assets/images/link.png" alt="" class="link">
+                <div class="tags">
+                    <article class="tag">
+                        <img src="../assets/images/check-icon.png" alt="">
+                        <p>Flight Booking</p>
+                    </article>
+                    <article class="tag">
+                        <img src="../assets/images/check-icon.png" alt="">
+                        <p>Flight offer search</p>
+                    </article>
+                    <article class="tag">
+                        <img src="../assets/images/check-icon.png" alt="">
+                        <p>Post Booking Management</p>
+                    </article>
                 </div>
             </div>
         </section>
-        
+        <Slide />
+        <section>
+            <div class="section-container">
+                <h3 class="hero">Start building with Tiqwa</h3>
+                <p>Accelerate your development process with Tiqwa: powerful tools, extensive APIs, scalable infrastructure, developer-friendly documentation, and a supportive community. </p>
+                <button class="btn">Request Demo in 1 minute!</button>
+            </div>
+        </section>
     </div>
 </template>
 
 <script>
+import Slide from '../components/Slide.vue'
     export default {
+        components: { Slide },
         setup(){
             const features = [
                 {
@@ -155,6 +189,8 @@
 </script>
 
 <style scoped>
+
+
     .container {
         width: 97vw;
         margin: 0 auto;
@@ -168,6 +204,7 @@
         top: 0;
         left: 0;
         margin-bottom: 3.08rem;
+        z-index: -1;
     }
 
     .bg-img img {
@@ -184,7 +221,7 @@
         font-size: 0.8rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 1.23rem; /* 1.6rem */
+        line-height: 1.23rem;
         padding: 0.29rem 1.16rem;
         width: 10.3rem;
         margin: 6.88rem auto 1.93rem;
@@ -196,7 +233,7 @@
         font-size: 1.16rem;
         font-style: normal;
         font-weight: 400;
-        line-height: 2.25rem; /* 150% */
+        line-height: 2.25rem;
         width: 39.17rem;
         max-width: 90%;
         margin: 2.89rem auto 2.89rem;
@@ -218,7 +255,7 @@
         line-height: 3.8rem;
     }
 
-    .card .btn {
+    .btn {
         border-radius: 0.25rem;
         background: #891189;
         padding: 0.7rem 1.925rem;
@@ -230,6 +267,7 @@
         line-height: 1.3rem; /* 1.6875rem */
         cursor: pointer;
         margin-bottom: 6.93rem;
+        border: none;
     }
 
     .images-layout img {
@@ -367,7 +405,7 @@
         position: relative;
     }
 
-    .access .hero {
+    .hero {
         color: #FFF;
         font-family: Nunito Sans;
         font-size: 2.69rem;
@@ -488,7 +526,8 @@
     }
     .animate-img.btm {
         bottom: 0;
-        left: 61.62rem;
+        /* left: 61.62rem; */
+        right: 7.07rem;
     }
 
     .center-text {
@@ -562,6 +601,133 @@
         font-style: normal;
         font-weight: 400;
         line-height: 1.54rem; /* 2rem */
+    }
+
+    .distribution {
+        background: url('../assets/images/LooperGroup1.png') no-repeat, url('../assets/images/Vector.png') no-repeat;
+        background-position: left 28.18rem top, left 20.2rem bottom -2.5rem;
+        background-size: 35.61rem, 20.44rem;
+        margin-top: 3.08rem;
+    }
+
+    .distribution .top-row {
+        width: auto;
+        max-width: 48rem;
+        margin: 0 auto;
+        text-align: center;
+    }    
+
+    .distribution .top-row p {
+        color: var(--white);
+        text-align: center;
+        font-family: Nunito Sans;
+        font-size: 1.16rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.85rem;
+        margin-bottom: 2.31rem;
+    }
+
+    .dist-system {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4.04rem;
+    }
+
+    .distribution .btn2 {
+        padding: 0.75rem 1.93rem;
+        margin:3.08rem auto 6.16rem;
+    }
+
+    .dist-system img {
+        width: 8.62rem;
+    }
+
+    .distribution .btm-row {
+        border-radius: 0.625rem;
+        border: 0.5px solid #7952B3;
+        width: 77%;
+        margin: 0 auto 5.34rem;
+        padding: 4.81rem;
+        display: flex;
+        align-items: flex-end;
+        gap: 2rem;
+        position: relative;
+    }
+
+    .link {
+        position: absolute;
+        top: 0.92rem;
+        left: 14.22rem;
+        width: 7rem;
+    }
+
+    .distribution .btm-row .api-demo {
+        width: 19.15rem;
+        height: auto;
+    }
+    .distribution .btm-row .card {
+        width: 12.07rem;
+        height: auto;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: column;
+        gap: 1.59rem;
+        width: 100%;
+    }
+
+    .tag {
+        display: flex;
+        align-items: center;
+        padding: 0.39rem 0.77rem;
+        border-radius: 0.625rem;
+        border: 1px solid #891189;
+        gap: 0.77rem;
+        max-width: 100%;
+        width: 12.6rem;
+    }
+
+    .tag:last-of-type {
+        width: 100%;
+    }
+
+    .tag p {
+        font-family: Nunito Sans;
+        font-size: 0.96rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background: linear-gradient(180deg, rgba(137, 17, 137, 0.86) 0%, rgba(234, 155, 234, 0.86) 22.4%, rgba(187, 60, 187, 0.86) 53.12%, rgba(215, 6, 215, 0.86) 78.65%, rgba(232, 98, 232, 0.86) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .section-container {
+        width: 52.12rem;
+        max-width: 90%;
+        margin: 6.9rem auto;
+        text-align: center;
+    }
+
+    .section-container p {
+        color: var(--white);
+        font-family: Nunito Sans;
+        font-size: 1.34rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.16rem; /* 2.8rem */
+        margin-bottom: 2.7rem;
+    }
+
+    .section-container .btn {
+        background: transparent;
+        border: 1px solid #D182D2;
+        color: #D182D2;
+        margin-bottom: 0;
     }
 
     
