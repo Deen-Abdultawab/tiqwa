@@ -48,7 +48,6 @@ ul {
 nav {
     padding: 1.16rem 0;
     width: 100%;
-    border: 1px solid red;
   }
 
   .nav-center {
