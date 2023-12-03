@@ -1,8 +1,8 @@
 <template>
-    <section class="review">
-        <div class="text">
-            <h3 class="hero">Read our customers reviews</h3>
-            <p class="desc">We understand how tedious it has been over the years to consume SOAP services, and the difficulty reading through XML responses.</p>
+    <section class="w-90 my-0 mx-auto relative px-[3.85rem] py-0">
+        <div class=" mb-[1.93rem] border border-solid border-primary-transparent">
+            <h3 class=" text-white text-[1.93rem] font-bold leading-[2.89rem]">Read our customers reviews</h3>
+            <p class=" text-white text-[1.16rem] font-normal leading-[1.85rem] w-[35.81rem] mx-o mt-[1.16rem] mb-[1.35rem]">We understand how tedious it has been over the years to consume SOAP services, and the difficulty reading through XML responses.</p>
         </div>
     </section>
         <div class="slide-container">
@@ -52,37 +52,6 @@
 </script>
 
 <style scoped>
-    .review {
-        padding: 3.85rem 0;
-        width: 90%;
-        margin: 0 auto;
-        position: relative;
-    }
-
-    .text {
-        border-bottom: 1px solid rgba(121, 82, 179, 0.20);
-        margin-bottom: 1.93rem;
-    }
-
-    .hero {
-        color: var(--white);
-        font-family: Nunito Sans;
-        font-size: 1.93rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2.89rem;
-    }
-
-    .desc {
-        color: #FFF;
-        font-family: Nunito Sans;
-        font-size: 1.16rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.85rem;
-        width: 35.81rem;
-        margin: 1.16rem 0 1.35rem;
-    }
 
     .row1 {
         gap: 3.8rem;

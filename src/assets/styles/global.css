@@ -23,9 +23,7 @@ button {
     border: none;
 }
 
-body {
-    background: var(--background);
-}
+
 
 html {
     font-size: 16px; /**12.32px or a scale factor of 0.77**/

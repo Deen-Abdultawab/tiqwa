@@ -204,7 +204,7 @@ import Slide from '../components/Slide.vue'
         top: 0;
         left: 0;
         margin-bottom: 3.08rem;
-        z-index: -1;
+        /* z-index: -1; */
     }
 
     .bg-img img {

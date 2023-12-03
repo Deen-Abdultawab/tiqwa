@@ -1,7 +1,9 @@
 <template>
-  <Navbar />
-  <Homepage />
-  <Footer />
+  <div class=" font-Nunito bg-background">
+    <Navbar />
+    <Homepage />
+    <Footer />
+  </div>
 </template>
 
 <script>
